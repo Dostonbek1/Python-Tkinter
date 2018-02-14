@@ -1,6 +1,6 @@
-#!/usr/bin/python3
-# feedback_solution.py by Barron Stone
-# This is an exercise file from Python GUI Development with Tkinter on lynda.com
+# Author: Dostonbek Toirov
+# Acknowledgement: Barron Stone
+# This is developed from an exercise file from Python GUI Development with Tkinter on lynda.com
 
 from tkinter import *
 from tkinter import ttk
@@ -10,7 +10,7 @@ class Feedback:
 
     def __init__(self, master):
         
-        master.title('Explore California Feedback')
+        master.title('Explore toirov.net')
         master.resizable(False, False)
         master.configure(background = '#e1d8b9')
         
@@ -27,8 +27,8 @@ class Feedback:
         ttk.Label(self.frame_header, image = self.logo).grid(row = 0, column = 0, rowspan = 2)
         ttk.Label(self.frame_header, text = 'Thanks for Exploring!', style = 'Header.TLabel').grid(row = 0, column = 1)
         ttk.Label(self.frame_header, wraplength = 300,
-                  text = ("We're glad you chose Explore California for your recent adventure.  "
-                          "Please tell us what you thought about the 'Desert to Sea' tour.")).grid(row = 1, column = 1)
+                  text = ("We're glad you chose toirov.net to improve your programming skills.  "
+                          "Please tell us what you thought about this e-learning platform.")).grid(row = 1, column = 1)
         
         self.frame_content = ttk.Frame(master)
         self.frame_content.pack()
